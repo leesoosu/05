@@ -5,15 +5,13 @@ int main(int argc, char *argv[])
 {
   int a;
   
-  printf("정수 하나를 입력하시오: ");
+  printf("input an integer : ");
   scanf("%d", &a);
   
-  if(a>0)
-       printf("양수입니다.");
-  else if(a<0)
-       printf("음수입니다.");
+  if(a>=0)
+       printf("absolute value: %d /n", a);
   else
-      printf("0입니다.");
+       printf("absolute value: %d /n", -a);
   
   system("PAUSE");	
   return 0;
