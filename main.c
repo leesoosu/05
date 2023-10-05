@@ -3,15 +3,16 @@
 
 int main(int argc, char *argv[])
 {
-  int a;
+  int c, count=0;
   
-  printf("input an integer : ");
-  scanf("%d", &a);
+  printf("input a string : ");
   
-  if(a>=0)
-       printf("absolute value: %d /n", a);
-  else
-       printf("absolute value: %d /n", -a);
+  while((c=getchar())!='\n')
+  {
+      if(c>='0' && c<='9')
+         count++;         
+  }
+  printf("the number of digits is %d\n", count);
   
   system("PAUSE");	
   return 0;
